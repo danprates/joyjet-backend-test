@@ -6,12 +6,14 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "start": "node src/Main"
+    "start": "node src/Main",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "keywords": [],
   "author": "Daniel Prates",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3"
   }
 }

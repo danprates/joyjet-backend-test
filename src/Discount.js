@@ -1,5 +1,6 @@
 /**
  * @name Discounts
+ * @module
  * @description This function will return an object that contains a list of discounts
  * @param {Array} discounts - The list of discounts
  * @returns {Object} The full object
@@ -10,6 +11,7 @@ module.exports = (discounts) => {
 
   /**
    * @name getValue
+   * @function
    * @description This function will return the value of discount
    * @param {Number} articleId The id of article
    * @param {Number} price The price of article

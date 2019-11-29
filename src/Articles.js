@@ -1,5 +1,6 @@
 /**
  * @name Articles
+ * @module
  * @description This function will return an object that contains a list of articles
  * @param {Array} articles - List of articles
  * @returns {Object} The object that contains the list
@@ -10,6 +11,7 @@ module.exports = (articles) => {
 
   /**
    * @name findById
+   * @function
    * @description This function will return an article from the list of articles
    * @param {Number} id - The id of article
    * @returns {Object} The founded article

@@ -1,5 +1,6 @@
 /**
  * @name Delivery
+ * @module
  * @description This function will return an object that contains a list of delivery fees
  * @param {Array} fees The list of delivery fees
  * @returns {Object} The full object
@@ -10,6 +11,7 @@ module.exports = (fees) => {
 
   /**
    * @name getPrice
+   * @function
    * @description This method will return the value of delivery based on cart's price
    * @param {Number} value The cart's price
    * @returns {Number} The value of delivery

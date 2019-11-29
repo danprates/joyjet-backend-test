@@ -1,5 +1,6 @@
 /**
  * @name Cart
+ * @module Cart
  * @description This function makes the cart instance
  * @param {Object} articles - A list of articles
  * @param {Object} delivery - A list of delivery fees
@@ -12,6 +13,7 @@ module.exports = (articles, delivery, discount) => {
 
   /**
    * @name checkout
+   * @function
    * @description This method will sum this cart's total cost
    * @param {Number} id - The ID of the cart
    * @param {Array} items - The list of articles
