@@ -1,0 +1,17 @@
+{
+  "name": "joyjet-backend-test",
+  "version": "1.0.0",
+  "description": "This is the project asked from Joyjet team",
+  "main": "Main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node src/Main"
+  },
+  "keywords": [],
+  "author": "Daniel Prates",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
