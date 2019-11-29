@@ -36,3 +36,9 @@ If you want to run the unit tests
 ```
 npm run test:watch
 ```
+
+You can get more information about the code, run the follow command:
+```
+npm run doc
+```
+and open the `index.html` file inside docs folder
