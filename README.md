@@ -39,7 +39,7 @@ npm run start
 
 or if you want to run the unit tests
 ```
-npm run test:watch
+npm run test
 ```
 
 Finally, you can get more information about the code, it just run the follow command:
