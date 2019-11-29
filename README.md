@@ -27,17 +27,22 @@ Write code that generates output.json from data.json
 
 ## How to getting started?
 
-If you want to see the algorithm working
+First of all, you need to install all dependencies
+```
+npm install
+```
+
+And now if you want to see the algorithm working
 ```
 npm run start
 ```
 
-If you want to run the unit tests
+or if you want to run the unit tests
 ```
 npm run test:watch
 ```
 
-You can get more information about the code, run the follow command:
+Finally, you can get more information about the code, it just run the follow command:
 ```
 npm run doc
 ```
