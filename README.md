@@ -1,3 +1,5 @@
+# Joyjet's backend application test
+
 ## Level 1
 
 We are building an e-commerce website. Our customers can:
@@ -41,9 +43,3 @@ or if you want to run the unit tests
 ```
 npm run test
 ```
-
-Finally, you can get more information about the code, it just run the follow command:
-```
-npm run doc
-```
-and open the `index.html` file inside docs folder
