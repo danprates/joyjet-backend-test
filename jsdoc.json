@@ -7,9 +7,21 @@
   "plugins": ["plugins/markdown"],
   "templates": {
     "cleverLinks": true,
-    "monospaceLinks": true
+    "monospaceLinks": true,
+    "better-docs": {
+      "name": "Joyjet application test Documentation",
+      "logo": "img/logo.gif",
+      "hideGenerator": false,
+      "navigation": [
+        {
+          "label": "Github",
+          "href": "https://github.com/danprates/joyjet-backend-test"
+        }
+      ]
+    }
   },
   "opts": {
+    "template": "node_modules/better-docs",
     "recurse": true,
     "destination": "./docs/"
   }

@@ -7,13 +7,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "node src/Main",
-    "doc": "jsdoc -c jsdoc.json"
+    "doc": "jsdoc -c jsdoc.json --readme ./README.md"
   },
   "keywords": [],
   "author": "Daniel Prates",
   "license": "MIT",
   "devDependencies": {
+    "better-docs": "^1.4.7",
     "jest": "^24.9.0",
     "jsdoc": "^3.6.3"
-  }
+  },
+  "dependencies": {}
 }
