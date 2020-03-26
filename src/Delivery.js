@@ -7,7 +7,9 @@
  * @throws {Error} Will throw an error when is passed a incorrect array of fees
  */
 module.exports = (fees) => {
-  if (!fees || !Array.isArray(fees)) { throw new Error('Incorrect fees') }
+  if (!fees || !Array.isArray(fees)) {
+    throw new Error('Incorrect fees');
+  }
 
   /**
    * @name getPrice
@@ -18,15 +20,18 @@ module.exports = (fees) => {
    * @throws {Error} Will throw an error when the value param is invalid
    */
   const getPrice = (value) => {
-    if (!value || typeof value !== 'number' || value < 0) { throw new Error('Incorrect value') }
+    if (!value || typeof value !== 'number' || value < 0) {
+      throw new Error('Incorrect value');
+    }
 
-    const result = fees
-      .find(({ eligible_transaction_volume }) => value >= eligible_transaction_volume.min_price && value <= eligible_transaction_volume.max_price)
+    const result = fees.find(
+      ({ eligible_transaction_volume }) =>
+        value >= eligible_transaction_volume.min_price &&
+        value <= eligible_transaction_volume.max_price,
+    );
 
-    return result
-      ? result.price
-      : 0
-  }
+    return result ? result.price : 0;
+  };
 
-  return { getPrice }
-}
+  return { getPrice };
+};

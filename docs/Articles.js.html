@@ -87,7 +87,9 @@
  * @throws {Error} Will throw an error when passed an incorrect array of articles
  */
 module.exports = (articles) => {
-  if (!articles || !Array.isArray(articles)) { throw new Error('Incorrect list of articles') }
+  if (!articles || !Array.isArray(articles)) {
+    throw new Error('Incorrect list of articles');
+  }
 
   /**
    * @name findById
@@ -99,17 +101,21 @@ module.exports = (articles) => {
    * @throws {Error} Will throw an error when the article is not found
    */
   const findById = (id) => {
-    if (!id || typeof id !== 'number' || id &lt;= 0) { throw new Error('Incorrect article id') }
+    if (!id || typeof id !== 'number' || id &lt;= 0) {
+      throw new Error('Incorrect article id');
+    }
 
-    const article = articles.find(a => a.id === id)
+    const article = articles.find((a) => a.id === id);
 
-    if (!article) { throw new Error('Article not found') }
+    if (!article) {
+      throw new Error('Article not found');
+    }
 
-    return article
-  }
+    return article;
+  };
 
-  return { findById }
-}
+  return { findById };
+};
 </code></pre>
         </article>
     </section>

@@ -87,7 +87,9 @@
  * @throws {Error} Will return an error when passed a incorrect array of discounts
  */
 module.exports = (discounts) => {
-  if (!discounts || !Array.isArray(discounts)) { throw new Error('Incorrect list of discounts') }
+  if (!discounts || !Array.isArray(discounts)) {
+    throw new Error('Incorrect list of discounts');
+  }
 
   /**
    * @name getValue
@@ -98,21 +100,27 @@ module.exports = (discounts) => {
    * @throws {Error} Will throw an error when passed incorrect articleId ou price
    */
   const getValue = (articleId, price) => {
-    if (!articleId || typeof articleId !== 'number' || articleId &lt; 0) { throw new Error('Incorrect article id') }
+    if (!articleId || typeof articleId !== 'number' || articleId &lt; 0) {
+      throw new Error('Incorrect article id');
+    }
 
-    if (!price || typeof price !== 'number' || price &lt; 0) { throw new Error('Incorrect price') }
+    if (!price || typeof price !== 'number' || price &lt; 0) {
+      throw new Error('Incorrect price');
+    }
 
-    const discount = discounts.find(d => d.article_id === articleId)
+    const discount = discounts.find((d) => d.article_id === articleId);
 
-    if (!discount) { return 0 }
+    if (!discount) {
+      return 0;
+    }
 
     return discount.type === 'amount'
       ? discount.value
-      : price * (discount.value / 100)
-  }
+      : price * (discount.value / 100);
+  };
 
-  return { getValue }
-}
+  return { getValue };
+};
 </code></pre>
         </article>
     </section>

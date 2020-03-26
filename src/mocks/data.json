@@ -34,15 +34,11 @@
     },
     {
       "id": 4,
-      "items": [
-        { "article_id": 7, "quantity": 1 }
-      ]
+      "items": [{ "article_id": 7, "quantity": 1 }]
     },
     {
       "id": 5,
-      "items": [
-        { "article_id": 8, "quantity": 3 }
-      ]
+      "items": [{ "article_id": 8, "quantity": 3 }]
     }
   ],
   "delivery_fees": [
